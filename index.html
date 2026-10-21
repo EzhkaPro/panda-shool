@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PandaShool</title>
-
+    <link
+      rel="preconnect"
+      href="https://fonts-online.ru/fonts/montserrat-alternates"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,8 +20,8 @@
 
   <body>
     <div class="contener">
+      <!--1/ ШАПКА-->
       <header class="header">
-        <!--1/ ШАПКА-->
         <div class="navigation">
           <a href="index.html">
             <img src="img/PandaSchool.png" alt="логотип Панда" />
@@ -35,7 +38,7 @@
           </div>
         </div>
         <nav class="menu">
-          <a href="#" class="btn-menu">Все курсы</a>
+          <a href="#">Все курсы</a>
           <a href="#">Летняя программа</a>
           <a href="#">Преподаватели</a>
           <a href="#">Расписание и цены</a>
@@ -46,131 +49,162 @@
       </header>
 
       <!--2/ ГЛАВНОЕ МЕНЮ (картинка с читающей пандой)-->
-      <div>
-        <img src="img/ChatGPT Image 24 июн. 2026 г., 14_28_50 1.png" alt="" />
-        <h2>Лучшие курсы английского языка в Минске для детей и подростков</h2>
-        <p>Полное погружение в изучение разговорного английского языка</p>
-        <a href="#" class="btn-main">Записаться на курсы</a>
+      <div class="hero-section">
+        <div class="image-container">
+          <!-- Основное изображение (фон) -->
+          <img
+            src="img/Панды фон.png"
+            alt="Фоновое изображение"
+            class="background"
+          />
+          <!-- Изображение, которое будет сверху (наложение) -->
+          <img
+            src="img/Панды .png"
+            alt="Наложенное изображение"
+            class="overlay"
+          />
+        </div>
+
+        <div class="text-overlay">
+          <h1 class="typography">
+            Лучшие курсы английского языка в Минске
+            <span class="color">для детей и подростков</span>
+          </h1>
+          <p class="text-typography">
+            Полное погружение в изучение разговорного английского языка
+          </p>
+          <a href="#" class="btn-main">Записаться на курсы</a>
+        </div>
       </div>
 
-      <!--3.1. ПРЕИМУЩЕСТВА (сердечки розовые)-->
-      <div>
-        <a href="#" class="feature-card">
+      <!--3. ПРЕИМУЩЕСТВА -->
+      <div class="features">
+        <!--(сердечки розовые)-->
+        <a href="#" class="feature-blue">
           <img src="img/favourite 1.png" alt="иконка розовое сердце" />
           <span>Мини-группы до 8 человек</span>
         </a>
-        <a href="#" class="feature-card">
+        <a href="#" class="feature-blue">
           <img src="img/favourite 1.png" alt="иконка розовое сердце" />
           <span> Mотивация Panda Cash</span>
         </a>
-        <a href="#" class="feature-card">
+        <a href="#" class="feature-blue">
           <img src="img/favourite 1.png" alt="иконка розовое сердце" />
           <span> Разговорная практика</span>
         </a>
-        <a href="#" class="feature-card">
+        <a href="#" class="feature-blue">
           <img src="img/favourite 1.png" alt="иконка розовое сердце" />
           <span> Офлайн и онлайн</span>
         </a>
-      </div>
-
-      <!--3.2. (сердечки серые)-->
-      <div>
-        <a href="#"
-          ><img src="img/favourite.png" alt="иконка серое сердце" />
+        <!--(сердечки серые)-->
+        <a href="#" class="feature-grey">
+          <img src="img/favourite.png" alt="иконка серое сердце" />
           <span> >5k довольный детей и родителей</span>
         </a>
-        <a href="#">
+        <a href="#" class="feature-grey">
           <img src="img/favourite.png" alt="иконка серое сердце" />
           <span>>500k занятий с 2015 года</span>
         </a>
-        <a href="#"
-          ><img src="img/favourite.png" alt="иконка серое сердце" />
+        <a href="#" class="feature-grey">
+          <img src="img/favourite.png" alt="иконка серое сердце" />
           <span>1 500 положительных отзывов</span>
         </a>
-        <a href="#">
+        <a href="#" class="feature-grey">
           <img src="img/favourite.png" alt="иконка серое сердце" />
           <span>4 филиала по всему Минску</span>
         </a>
       </div>
 
       <!--4. ИНФО (со звездой)-->
-      <div>
-        <div>
-          <h1>О курсах английского языка Panda English School</h1>
-          <p>
-            Единственные детские курсы английского языка в Беларуси с
-            аккредитацией Quality English и статусом Cambridge Leader Center
-          </p>
-          <a href="#" class="btn-main">О курсах Panda English</a>
+      <div class="info">
+        <div class="info-center">
+          <div class="info-text">
+            <h1>О курсах английского языка Panda English School</h1>
+            <p>
+              Единственные детские курсы английского языка в Беларуси с
+              аккредитацией Quality English и статусом Cambridge Leader Center
+            </p>
+            <a href="#" class="btn-main">О курсах Panda English</a>
+          </div>
+          <img src="img/Group 1036.png" alt="" class="star" />
         </div>
-        <div>
-          <img src="img/Group 1036.png" alt="" />
-        </div>
-      </div>
 
-      <!--4. ПРЕИМУЩЕСТВА 2 (молнии)-->
-      <div>
-        <div>
-          <div>
-            <img src="img/Frame 2147223396.png" alt="" />
+        <!--(молнии)-->
+        <div class="info-zip">
+              <img src="img/Frame 2147223396.png" alt="" />
+          <div>        
             <h1>Учим говорить с первого занятия</h1>
             <p>Без зубрежки правил и перевода текста</p>
           </div>
+              <img src="img/Frame 2147223396.png" alt="" />
           <div>
-            <img src="img/Frame 2147223396.png" alt="" />
             <h1>Опытные преподаватели</h1>
             <p>Средний стаж преподавателя от 5 лет</p>
           </div>
-        </div>
-
-        <div>
+              <img src="img/Frame 2147223396.png" alt="" />
           <div>
-            <img src="img/Frame 2147223396.png" alt="" />
             <h1>На связи с Вами в персональном чате</h1>
             <p>Чтобы оставаться на связи по любым вопросам обучения</p>
           </div>
+              <img src="img/Frame 2147223396.png" alt="" />
           <div>
-            <img src="img/Frame 2147223396.png" alt="" />
             <h1>4 филиала по всему Минску</h1>
             <p>Удобное расположение</p>
           </div>
-        </div>
-
-        <div>
-          <img src="img/Frame 2147223396.png" alt="" />
-          <h1>Учим в мини-группах</h1>
-          <p>Мини-группы до 8 детей офлайн и онлайн</p>
-
-          <img src="img/Frame 2147223396.png" alt="" />
-          <h1>Видимый прогресс</h1>
-          <p>Проводим 2 аналитических отчета в год</p>
+              <img src="img/Frame 2147223396.png" alt="" />
+          <div>
+            <h1>Учим в мини-группах</h1>
+            <p>Мини-группы до 8 детей офлайн и онлайн</p>
+          </div>
+              <img src="img/Frame 2147223396.png" alt="" />
+          <div>
+            <img src="img/Frame 2147223396.png" alt="" />
+            <h1>Видимый прогресс</h1>
+            <p>Проводим 2 аналитических отчета в год</p>
+          </div>
         </div>
       </div>
 
-      <!--5. ФОРМА ЗАПИСИ-->
+      <!--4. ФОРМА ЗАПИСИ-->
       <section>
-        <div>
-          <img src="img/ChatGPT Image 2 июл. 2026 г., 21_52_35 1.png" alt="" />
-          <form action="#">
-            <h1>Записаться на тестирование</h1>
-            <p>
-              Где опытный преподаватель определит ваш уровень английского языка
-              и подберет группу
-            </p>
-            <input type="text" placeholder="Ваше имя" /> <br />
-            <input type="number" placeholder="+375" /><br />
-            <input type="checkbox" id="check" placeholder="" />
-            <label for="check">
-              Я согласен (-на) с Политикой обработки персональных данных
-            </label>
-          </form>
-          <button type="submit" class="btn-main">
-            <p>Записаться на тестирование</p>
-          </button>
+        <div class="form">
+          <div class="img-form">
+            <!-- Основное изображение (фон) -->
+            <img
+              src="img/ChatGPT Image 2 июл. 2026 г., 21_52_35 1.png"
+              alt="Фоновое изображение"
+              class="background-form"
+            />
+            <!-- Изображение, которое будет сверху (наложение) -->
+            <img
+              src="img/космонавт.png"
+              alt="Наложенное изображение"
+              class="overlay-form"
+            />
+          </div>
+
+          <div class="registration">
+            <form action="#">
+              <h1>Записаться на тестирование</h1>
+              <p>
+                Где опытный преподаватель определит ваш уровень английского
+                языка и подберет группу
+              </p>
+              <input type="text" placeholder="Ваше имя" /> <br />
+              <input type="number" placeholder="+375" /><br />
+              <input type="checkbox" id="check" placeholder="" />
+              <label for="check">
+                Я согласен (-на) с Политикой обработки персональных данных
+              </label>
+            </form>
+            <button type="submit" class="btn-main">
+              <p>Записаться на тестирование</p>
+            </button>
+          </div>
         </div>
       </section>
 
-      <!--6. КУРСЫ-->
+      <!--5. КУРСЫ-->
       <section>
         <div>
           <h1>Все курсы</h1>
@@ -228,7 +262,7 @@
         </div>
       </section>
 
-      <!--7. ОТЗЫВЫ-->
+      <!--6. ОТЗЫВЫ-->
       <section>
         <h1>Что о нас говорят дети и родители</h1>
         <p>
@@ -348,7 +382,7 @@
         <a href="#" class="btn-main">Записаться на пробное занятие</a>
       </div>
 
-      <!--8. РЕКЛАМА -->
+      <!--7. РЕКЛАМА -->
       <section>
         <div>
           <img src="" alt="" />
@@ -366,7 +400,7 @@
         </div>
       </section>
 
-      <!--9. ПРЕПОДАВАТЕЛИ-->
+      <!--8. ПРЕПОДАВАТЕЛИ-->
       <section class="teachers">
         <h1>Наши преподаватели</h1>
         <p>
@@ -477,7 +511,7 @@
         </div>
       </section>
 
-      <!--10. ТЕСТИРОВАНИЕ-->
+      <!--9. ТЕСТИРОВАНИЕ-->
       <section>
         <img src="img/ChatGPT Image 24 июн. 2026 г., 14_28.png" alt="" />
         <h1>Онлайн-тестирование</h1>
@@ -488,7 +522,7 @@
         <a href="#" class="btn-main">Подробнее</a>
       </section>
 
-      <!--11. КОНТАКТЫ (карта)-->
+      <!--10. КОНТАКТЫ (карта)-->
       <section>
         <div>
           <h1>Филиалы и контакты</h1>
@@ -586,7 +620,7 @@
         </div>
       </section>
 
-      <!--4. ПОДВАЛ-->
+      <!--11. ПОДВАЛ-->
       <footer>
         <img src="" alt="" />
         <section>
