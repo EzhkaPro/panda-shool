@@ -15,13 +15,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="contener">
+    <div class="content">
       <!--1/ ШАПКА-->
-      <header class="header">
+      <header class="heading">
         <div class="navigation">
           <a href="index.html">
             <img src="img/PandaSchool.png" alt="логотип Панда" />
@@ -223,19 +236,29 @@
         </div>
 
         <div class="registration">
-          <form action="#">
+          <div class="reg-head">
             <h1>Записаться на тестирование</h1>
             <p>
               Где опытный преподаватель определит ваш уровень английского языка
               и подберет группу
             </p>
-            <input type="text" placeholder="Ваше имя" /> <br />
-            <input type="number" placeholder="+375" /><br />
+          </div>
+
+          <form action="#" class="form-text">
+            <input type="text" placeholder="Ваше имя" class="form-name" />
+            <input type="number" placeholder="+375" class="form-pxone" />
+          </form>
+
+          <form action="#" class="form-label">
             <input type="checkbox" id="check" placeholder="" />
             <label for="check">
-              Я согласен (-на) с Политикой обработки персональных данных
+              Я согласен (-на) с
+              <span class="underline"
+                >Политикой обработки персональных данных</span
+              >
             </label>
           </form>
+
           <button type="submit" class="btn-main">
             <p>Записаться на тестирование</p>
           </button>
@@ -254,13 +277,13 @@
 
         <div class="courses-item">
           <div>
-            <h1>Английский для детей(7–12 лет)</h1>
+            <h3>Английский для детей(7–12 лет)</h3>
             <p>Интересные занятия в игровой форме для уверенного старта</p>
             <p>От 4 500 ₽ / месяц</p>
             <a href="#" class="btn-main">Подробнее</a>
           </div>
           <div>
-            <h1>Английский для подростков(13–17 лет)</h1>
+            <h3>Английский для подростков(13–17 лет)</h3>
             <p>
               Практические знания, разговорная практика и подготовка к экзаменам
             </p>
@@ -268,20 +291,20 @@
             <a href="#" class="btn-main">Подробнее</a>
           </div>
           <div>
-            <h1>Английский для начальных классов</h1>
+            <h3>Английский для начальных классов</h3>
             <p>Поможем полюбить английский и преуспеть в школе</p>
             <p>От 4 500 ₽ / месяц</p>
             <a href="#" class="btn-main">Подробнее</a>
           </div>
 
           <div>
-            <h1>Английский с нуля</h1>
+            <h3>Английский с нуля</h3>
             <p>Пошаговое обучение с нуля до уверенного общения</p>
             <p>От 4 500 ₽ / месяц</p>
             <a href="#" class="btn-main">Подробнее</a>
           </div>
           <div>
-            <h1>Онлайн-обучение</h1>
+            <h3>Онлайн-обучение</h3>
             <p>Занимайтесь английским из любой точки мира в удобное время</p>
             <p>От 4 500 ₽ / месяц</p>
             <a href="#" class="btn-main">Подробнее</a>
@@ -392,7 +415,7 @@
         <div class="revievs-tachers">
           <div class="tachers-block">
             <div class="tachers-contener">
-              <p>Занимаемся 1 год</p>
+              <span>Занимаемся 1 год</span>
               <img
                 src="img/Group 1026.png"
                 alt="Наложенное изображение"
@@ -408,7 +431,7 @@
           </div>
           <div class="tachers-block">
             <div class="tachers-contener">
-              <p>Занимаемся 1 год</p>
+              <span>Занимаемся 1 год</span>
               <img
                 src="img/Group 1026.png"
                 alt="Наложенное изображение"
@@ -424,7 +447,7 @@
           </div>
           <div class="tachers-block">
             <div class="tachers-contener">
-              <p>Занимаемся 1 год</p>
+              <span>Занимаемся 1 год</span>
               <img
                 src="img/Group 1026.png"
                 alt="Наложенное изображение"
@@ -440,7 +463,7 @@
           </div>
           <div class="tachers-block">
             <div class="tachers-contener">
-              <p>Занимаемся 1 год</p>
+              <span>Занимаемся 1 год</span>
               <img
                 src="img/Group 1026.png"
                 alt="Наложенное изображение"
